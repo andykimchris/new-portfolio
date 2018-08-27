@@ -1,0 +1,45 @@
+@media (max-width: 1100px) {
+
+    .skills-icons {
+        display: flex;
+        flex-direction: row;
+    }
+    header {
+        h1 {
+            text-align: center;
+        }
+    }
+} 
+
+@media(max-width: 680px) {
+
+    .skills-icons {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        .col-lg-3 {
+            margin-right: 6em;
+        }
+    }
+} 
+
+@media(max-width:825px) {
+
+    header {
+        h1 {
+            text-align: center;
+        }
+        h2, h3 {
+            text-align: center;
+            position: static;
+        }
+    }
+}
+
+@media(max-width:538px) {
+    header {
+        h3 {
+            margin-top: 1.6em;
+        }
+    }
+}
