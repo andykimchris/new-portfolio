@@ -1,0 +1,12 @@
+@mixin header-text {
+    color: #fff ;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%); 
+}
+
+@mixin online-portal-icons {
+    margin-top: 0.7em;
+    padding: 0.15em 0.1em;
+    font-size: 1.7em;
+}
