@@ -1,0 +1,226 @@
+@import 'mediaqueries';
+@import 'mixins';
+$primary-color: #000;
+$secondary-color: #fff;
+
+* {
+  margin: 0;
+  padding: 0;
+  border: none;
+  outline: none;
+  vertical-align: baseline;
+  font-size: 100%;
+  font-family: 'Raleway', sans-serif;
+}
+
+body {
+  width: 100%;
+  overflow-x: hidden;
+}
+
+header {
+  h1 {
+    margin-top: 1em;
+    top: 5%;
+    font-size: 5.4em;
+    font-weight: 600;
+    @include header-text;
+  }
+
+  h2 {
+    top: 50%;
+    font-size: 3em;
+    @include header-text;
+  }
+
+  h3 {
+    top: 60%;
+    @include header-text;
+  }
+}
+
+.about {
+  h1 {
+    text-align: center;
+    font-size: 5em;
+    color: $primary-color;
+    margin: 0.6em 0;
+    border-bottom: 1px solid $primary-color;
+  }
+
+  h3 {
+    letter-spacing: 0.07em;
+    word-spacing: 0.1em;
+    margin-bottom: 1.5em;
+  }
+
+  .col-lg-3 {
+    padding-left: 6em;
+    margin-bottom: 2em;
+    font-weight: 800;
+
+    .fa-html5 {
+      color: #0605ef;
+    }
+
+    .fa-css3-alt {
+      color: #f66c09;
+    }
+
+    .fa-python {
+      color: #11c60a;
+    }
+
+    .fa-sass {
+      color: #ee00eb;
+    }
+
+    .fa-dollar-sign {
+      color: #3e3df6;
+    }
+
+    .fa-js {
+      color: #e7e700;
+    }
+
+    .fa-react {
+      color: #42fffe;
+    }
+
+    .fa-database {
+      color: #4352a3;
+    }
+
+    p {
+      padding: 2em 0;
+    }
+  }
+}
+
+.work {
+  text-align: center;
+  background: $primary-color;
+
+  h1 {
+    text-align: center;
+    font-size: 5em;
+    color: $secondary-color;
+    margin: 0.85em 0;
+    border-bottom: 1px solid $secondary-color;
+  }
+
+  .col-lg-4 {
+    img {
+      width: 100%;
+      height: 320px;
+      padding-bottom: 2em;
+      z-index: 10;
+    }
+
+    button {
+      padding: 12px 8px;
+      background: $secondary-color;
+      color: $primary-color;
+      border: 1px solid $primary-color;
+      margin-bottom: 1.5em;
+      font-weight: 700;
+    }
+  }
+}
+
+.contact {
+  padding-top: 2em;
+
+  h1 {
+    text-align: center;
+    font-size: 5em;
+    color: $primary-color;
+    margin: 0.4em 0;
+    border-bottom: 1px solid $primary-color;
+  }
+
+  h3 {
+    margin-left: 0.2em;
+  }
+
+  h4 {
+    text-transform: uppercase;
+    margin-left: 0.2em;
+  }
+
+  .col-lg-4 {
+    ul {
+      display: flex;
+      flex-direction: row;
+
+      li {
+        list-style: none;
+        text-align: center;
+        font-size: 2em;
+        margin-left: 0.8em;
+
+        a {
+          padding-bottom: 1em;
+          text-align: center;
+
+          .fa-linkedin-in {
+            color: #1e6eee;
+            border: 1px solid #1e6eee;
+            @include online-portal-icons;
+          }
+
+          .fa-github-square {
+            color: $primary-color;
+            border: 1px solid $primary-color;
+            @include online-portal-icons;
+          }
+        }
+      }
+    }
+  }
+
+  .col-lg-7 {
+    padding-top: 1.4em;
+
+    .contact-form {
+      .form-control {
+        border: none;
+        border-bottom: 1px solid #aaa;
+        width: 100%;
+        margin-bottom: 2.5rem;
+        outline: none;
+        color: $primary-color;
+        border-radius: 0.01em;
+
+        &:focus {
+          border-color: inherit;
+          -webkit-box-shadow: none;
+          box-shadow: none;
+          width: 50%;
+          transition: width 0.7s ease-out;
+        }
+      }
+
+      button {
+        color: $secondary-color;
+        background-color: $primary-color;
+        border-radius: none;
+        padding: 1.2em 0.8em;
+        font-size: 1.1em;
+        font-weight: 700;
+        margin-bottom: 1em;
+
+        &:hover {
+          color: $primary-color;
+          background: $secondary-color;
+          border: 1px solid $primary-color;
+          transition: all 0.1s ease-in;
+        }
+      }
+    }
+  }
+}
+
+::placeholder {
+  color: $primary-color !important;
+}

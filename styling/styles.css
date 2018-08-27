@@ -1,0 +1,184 @@
+@media (max-width: 1100px) {
+  .skills-icons {
+    display: flex;
+    flex-direction: row; }
+
+  header h1 {
+    text-align: center; } }
+@media (max-width: 680px) {
+  .skills-icons {
+    display: flex;
+    flex-direction: column;
+    text-align: center; }
+    .skills-icons .col-lg-3 {
+      margin-right: 6em; } }
+@media (max-width: 825px) {
+  header h1 {
+    text-align: center; }
+  header h2, header h3 {
+    text-align: center;
+    position: static; } }
+@media (max-width: 538px) {
+  header h3 {
+    margin-top: 1.6em; } }
+* {
+  margin: 0;
+  padding: 0;
+  border: none;
+  outline: none;
+  vertical-align: baseline;
+  font-size: 100%;
+  font-family: 'Raleway', sans-serif; }
+
+body {
+  width: 100%;
+  overflow-x: hidden; }
+
+header h1 {
+  margin-top: 1em;
+  top: 5%;
+  font-size: 5.4em;
+  font-weight: 600;
+  color: #fff;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%); }
+header h2 {
+  top: 50%;
+  font-size: 3em;
+  color: #fff;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%); }
+header h3 {
+  top: 60%;
+  color: #fff;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%); }
+
+.about h1 {
+  text-align: center;
+  font-size: 5em;
+  color: #000;
+  margin: 0.6em 0;
+  border-bottom: 1px solid #000; }
+.about h3 {
+  letter-spacing: 0.07em;
+  word-spacing: 0.1em;
+  margin-bottom: 1.5em; }
+.about .col-lg-3 {
+  padding-left: 6em;
+  margin-bottom: 2em;
+  font-weight: 800; }
+  .about .col-lg-3 .fa-html5 {
+    color: #0605ef; }
+  .about .col-lg-3 .fa-css3-alt {
+    color: #f66c09; }
+  .about .col-lg-3 .fa-python {
+    color: #11c60a; }
+  .about .col-lg-3 .fa-sass {
+    color: #ee00eb; }
+  .about .col-lg-3 .fa-dollar-sign {
+    color: #3e3df6; }
+  .about .col-lg-3 .fa-js {
+    color: #e7e700; }
+  .about .col-lg-3 .fa-react {
+    color: #42fffe; }
+  .about .col-lg-3 .fa-database {
+    color: #4352a3; }
+  .about .col-lg-3 p {
+    padding: 2em 0; }
+
+.work {
+  text-align: center;
+  background: #000; }
+  .work h1 {
+    text-align: center;
+    font-size: 5em;
+    color: #fff;
+    margin: 0.85em 0;
+    border-bottom: 1px solid #fff; }
+  .work .col-lg-4 img {
+    width: 100%;
+    height: 320px;
+    padding-bottom: 2em;
+    z-index: 10; }
+  .work .col-lg-4 button {
+    padding: 12px 8px;
+    background: #fff;
+    color: #000;
+    border: 1px solid #000;
+    margin-bottom: 1.5em;
+    font-weight: 700; }
+
+.contact {
+  padding-top: 2em; }
+  .contact h1 {
+    text-align: center;
+    font-size: 5em;
+    color: #000;
+    margin: 0.4em 0;
+    border-bottom: 1px solid #000; }
+  .contact h3 {
+    margin-left: 0.2em; }
+  .contact h4 {
+    text-transform: uppercase;
+    margin-left: 0.2em; }
+  .contact .col-lg-4 ul {
+    display: flex;
+    flex-direction: row; }
+    .contact .col-lg-4 ul li {
+      list-style: none;
+      text-align: center;
+      font-size: 2em;
+      margin-left: 0.8em; }
+      .contact .col-lg-4 ul li a {
+        padding-bottom: 1em;
+        text-align: center; }
+        .contact .col-lg-4 ul li a .fa-linkedin-in {
+          color: #1e6eee;
+          border: 1px solid #1e6eee;
+          margin-top: 0.7em;
+          padding: 0.15em 0.1em;
+          font-size: 1.7em; }
+        .contact .col-lg-4 ul li a .fa-github-square {
+          color: #000;
+          border: 1px solid #000;
+          margin-top: 0.7em;
+          padding: 0.15em 0.1em;
+          font-size: 1.7em; }
+  .contact .col-lg-7 {
+    padding-top: 1.4em; }
+    .contact .col-lg-7 .contact-form .form-control {
+      border: none;
+      border-bottom: 1px solid #aaa;
+      width: 100%;
+      margin-bottom: 2.5rem;
+      outline: none;
+      color: #000;
+      border-radius: 0.01em; }
+      .contact .col-lg-7 .contact-form .form-control:focus {
+        border-color: inherit;
+        -webkit-box-shadow: none;
+        box-shadow: none;
+        width: 50%;
+        transition: width 0.7s ease-out; }
+    .contact .col-lg-7 .contact-form button {
+      color: #fff;
+      background-color: #000;
+      border-radius: none;
+      padding: 1.2em 0.8em;
+      font-size: 1.1em;
+      font-weight: 700;
+      margin-bottom: 1em; }
+      .contact .col-lg-7 .contact-form button:hover {
+        color: #000;
+        background: #fff;
+        border: 1px solid #000;
+        transition: all 0.1s ease-in; }
+
+::placeholder {
+  color: #000 !important; }
+
+/*# sourceMappingURL=styles.css.map */
