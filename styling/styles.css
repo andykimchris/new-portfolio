@@ -206,6 +206,7 @@ header h3 {
   margin-bottom: 2.5rem;
   outline: none;
   color: #000;
+  box-shadow: none;
   -webkit-box-shadow: none;
   border-radius: 0.01em;
 }
